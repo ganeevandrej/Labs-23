@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    
+        char string[1000];
+        int i = 0, k = 0;
+
+        cin.getline(string, 256);
+    
+        while (string[i] != '\0') {
+            if ((string[i] >= 'a') && (string[i] <= 'z')) {
+                k++;
+                i++;
+            }
+        }
+        
+        cout << k;
+    return 0;
+}
