@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main()
+{
+    string s(" hello es word!"), s0("es");
+    int count = 0;
+
+    for (string::size_type i = 0; i < s.length(); i++)
+        if (s[i] == s0[0])
+            if (s.substr(i, s0.length()) == s0)
+            {
+                count++;
+                i += s0.length() - 1;
+            }
+
+    cout << count;
+    return 0;
+}
