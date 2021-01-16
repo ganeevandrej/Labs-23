@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+void main() {
+
+	char s = 'C';
+	cout  << static_cast<char>(s - 1)<< " " << static_cast<char>(s + 1) << endl;
+}
