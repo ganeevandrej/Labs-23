@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    char C;
+    string S, S1 = "";
+    cout << "Введите строку: ";
+    getline(cin, S);
+    cout << "Введите символ: ", cin >> C;
+    for (int i = 0; i < S.length(); i++)
+    {
+        S1 += S[i];
+        if (S[i] == C)
+        {
+            S1 += S[i];
+        }
+    }
+    S = S1;
+    cout << S << '\n';
+    return 0;
+}
